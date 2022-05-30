@@ -13,13 +13,13 @@ on:
   workflow_dispatch:
     inputs:
       build:
-        description: '若要编译固件，请输入true'
+        description: 'true'
         required: true
         default: 'true'
       model:
-        description: '选择机型'
+        description: 'mi-router-cr6606'
         required: true
-        default: 'xiaomi-4a-gigabit' 
+        default: 'mi-router-cr6606' 
         type: choice
         options:
         - mi-router-4a-gigabit
@@ -34,7 +34,7 @@ on:
         - mi-router-3-pro
         - phicomm_k2p
       version_description:
-        description: '输入版本描述'     
+        description: 'qz1'     
         required: true
         default: '升级内容：内核升级，更新应用版本'
       cpu_overclock:
